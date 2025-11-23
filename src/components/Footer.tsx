@@ -1,14 +1,12 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-xl font-bold mb-4">COOPEC Ikirenga</h3>
+            <h3 className="text-xl font-bold mb-4">COOPEC IKIRENGA</h3>
             <p className="text-sm opacity-90 mb-4">
               Empowering communities through accessible financial services and sustainable development.
             </p>
@@ -79,8 +77,6 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} COOPEC Ikirenga. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
