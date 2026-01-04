@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { MapPin, Phone, Mail, Clock, Facebook, Twitter, Linkedin, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
+import { useTranslation } from "@/contexts/TranslationContext";
 import { z } from "zod";
 
 const contactSchema = z.object({
@@ -20,6 +21,7 @@ const contactSchema = z.object({
 
 const Contact = () => {
   const { toast } = useToast();
+  const { t } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -34,7 +36,6 @@ const Contact = () => {
     e.preventDefault();
     setErrors({});
 
-    // Validate form
     const result = contactSchema.safeParse(formData);
     if (!result.success) {
       const fieldErrors: Record<string, string> = {};
@@ -61,13 +62,13 @@ const Contact = () => {
       if (error) throw error;
 
       toast({
-        title: "Message Sent!",
+        title: t("common.success"),
         description: "Thank you for contacting us. We'll respond within 24 hours.",
       });
       setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
     } catch (error: any) {
       toast({
-        title: "Error",
+        title: t("common.error"),
         description: "Failed to send message. Please try again.",
         variant: "destructive",
       });
@@ -87,22 +88,22 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Visit Us",
+      title: t("contact.visitUs"),
       details: ["KG 7 Ave, Kigali", "Rwanda"],
     },
     {
       icon: Phone,
-      title: "Call Us",
+      title: t("contact.callUs"),
       details: ["+250 788 123 456", "+250 788 654 321"],
     },
     {
       icon: Mail,
-      title: "Email Us",
+      title: t("contact.emailUs"),
       details: ["info@coopecikirenga.rw", "support@coopecikirenga.rw"],
     },
     {
       icon: Clock,
-      title: "Business Hours",
+      title: t("contact.businessHours"),
       details: ["Mon - Fri: 8:00 AM - 5:00 PM", "Sat: 9:00 AM - 1:00 PM"],
     },
   ];
@@ -110,8 +111,8 @@ const Contact = () => {
   return (
     <div>
       <Hero
-        title="Get in Touch"
-        subtitle="We're here to help you with any questions about our services, membership, or loans"
+        title={t("contact.title")}
+        subtitle={t("contact.subtitle")}
       />
 
       {/* Contact Info Cards */}
@@ -141,15 +142,15 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-8">
             <Card className="border-border">
               <CardHeader>
-                <CardTitle>Send Us a Message</CardTitle>
+                <CardTitle>{t("contact.sendMessage")}</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you as soon as possible.
+                  {t("contact.formDesc")}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Full Name</Label>
+                    <Label htmlFor="name">{t("contact.fullName")}</Label>
                     <Input
                       id="name"
                       name="name"
@@ -162,7 +163,7 @@ const Contact = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email Address</Label>
+                    <Label htmlFor="email">{t("auth.email")}</Label>
                     <Input
                       id="email"
                       name="email"
@@ -176,7 +177,7 @@ const Contact = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Phone Number</Label>
+                    <Label htmlFor="phone">{t("contact.phone")}</Label>
                     <Input
                       id="phone"
                       name="phone"
@@ -190,7 +191,7 @@ const Contact = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="subject">Subject</Label>
+                    <Label htmlFor="subject">{t("contact.subject")}</Label>
                     <Input
                       id="subject"
                       name="subject"
@@ -203,7 +204,7 @@ const Contact = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
+                    <Label htmlFor="message">{t("contact.message")}</Label>
                     <Textarea
                       id="message"
                       name="message"
@@ -220,10 +221,10 @@ const Contact = () => {
                     {isSubmitting ? (
                       <>
                         <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                        Sending...
+                        {t("contact.sending")}
                       </>
                     ) : (
-                      "Send Message"
+                      t("contact.send")
                     )}
                   </Button>
                 </form>
@@ -233,9 +234,9 @@ const Contact = () => {
             <div className="space-y-6">
               <Card className="border-border">
                 <CardHeader>
-                  <CardTitle>Visit Our Office</CardTitle>
+                  <CardTitle>{t("contact.visitOffice")}</CardTitle>
                   <CardDescription>
-                    Come meet us in person at our main branch in Kigali.
+                    {t("contact.officeDesc")}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -255,9 +256,9 @@ const Contact = () => {
 
               <Card className="border-border">
                 <CardHeader>
-                  <CardTitle>Connect With Us</CardTitle>
+                  <CardTitle>{t("contact.connectWithUs")}</CardTitle>
                   <CardDescription>
-                    Follow us on social media for updates and financial tips.
+                    {t("contact.socialDesc")}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
