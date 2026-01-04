@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
+import { useTranslation } from "@/contexts/TranslationContext";
 
 interface Testimonial {
   id: number;
@@ -58,6 +59,7 @@ const testimonials: Testimonial[] = [
 const TestimonialsCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (!isAutoPlaying) return;
@@ -90,13 +92,13 @@ const TestimonialsCarousel = () => {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
             <Star className="w-4 h-4 fill-current" />
-            Member Stories
+            {t("testimonials.memberStories")}
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            What Our Members Say
+            {t("testimonials.title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Real stories from real members who have transformed their lives with COOPEC Ikirenga.
+            {t("testimonials.subtitle")}
           </p>
         </div>
 

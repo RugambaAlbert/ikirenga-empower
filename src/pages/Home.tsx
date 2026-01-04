@@ -4,50 +4,53 @@ import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Wallet, TrendingUp, Users, Shield, Smartphone, GraduationCap, ArrowRight } from "lucide-react";
+import { useTranslation } from "@/contexts/TranslationContext";
 
 const Home = () => {
+  const { t } = useTranslation();
+
   const services = [
     {
       icon: Wallet,
-      title: "Savings Accounts",
-      description: "Secure and flexible savings options with competitive interest rates to help you grow your wealth.",
+      title: t("services.savingsAccounts"),
+      description: t("services.savingsDesc"),
       link: "/services",
     },
     {
       icon: TrendingUp,
-      title: "Business Loans",
-      description: "Tailored loan products to help entrepreneurs and businesses thrive and expand.",
+      title: t("services.businessLoans"),
+      description: t("services.businessDesc"),
       link: "/loans",
     },
     {
       icon: Smartphone,
-      title: "Mobile Banking",
-      description: "Access your accounts anytime, anywhere with our secure mobile banking platform.",
+      title: t("services.mobileBanking"),
+      description: t("services.mobileDesc"),
       link: "/services",
     },
     {
       icon: GraduationCap,
-      title: "Financial Education",
-      description: "Free financial literacy programs to help you make informed financial decisions.",
+      title: t("services.financialEducation"),
+      description: t("services.educationDesc"),
       link: "/services",
     },
   ];
 
   const stats = [
-    { icon: Users, number: "50,000+", label: "Active Members" },
-    { icon: Wallet, number: "$10M+", label: "Total Savings" },
-    { icon: TrendingUp, number: "$8M+", label: "Loans Disbursed" },
-    { icon: Shield, number: "15+", label: "Years of Trust" },
+    { icon: Users, number: "50,000+", label: t("stats.activeMembers") },
+    { icon: Wallet, number: "$10M+", label: t("stats.totalSavings") },
+    { icon: TrendingUp, number: "$8M+", label: t("stats.loansDelivered") },
+    { icon: Shield, number: "15+", label: t("stats.yearsOfTrust") },
   ];
 
   return (
     <div>
       <Hero
-        title="Empowering Communities Through Financial Inclusion"
-        subtitle="Join COOPEC Ikirenga and access affordable financial services designed to help you save, invest, and grow your future."
-        ctaText="Become a Member"
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+        ctaText={t("hero.becomeMember")}
         ctaLink="/membership"
-        secondaryCtaText="Apply for a Loan"
+        secondaryCtaText={t("hero.applyLoan")}
         secondaryCtaLink="/loans"
       />
 
@@ -70,9 +73,9 @@ const Home = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="mb-4">Our Services</h2>
+            <h2 className="mb-4">{t("services.title")}</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive financial solutions tailored to meet your needs and help you achieve your goals.
+              {t("services.subtitle")}
             </p>
           </div>
 
@@ -89,7 +92,7 @@ const Home = () => {
                   <CardDescription className="mb-4">{service.description}</CardDescription>
                   <Link to={service.link}>
                     <Button variant="link" className="p-0 h-auto text-primary group">
-                      Learn More
+                      {t("services.learnMore")}
                       <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </Link>
@@ -106,19 +109,19 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-primary to-primary-light text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="mb-4">Ready to Get Started?</h2>
+          <h2 className="mb-4">{t("cta.ready")}</h2>
           <p className="text-lg mb-8 opacity-95 max-w-2xl mx-auto">
-            Join thousands of members who are building their financial future with COOPEC Ikirenga.
+            {t("cta.join")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/membership">
               <Button size="lg" variant="secondary" className="btn-hover">
-                Join Now
+                {t("nav.joinNow")}
               </Button>
             </Link>
             <Link to="/contact">
               <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary btn-hover">
-                Contact Us
+                {t("cta.contactUs")}
               </Button>
             </Link>
           </div>
