@@ -3,82 +3,79 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "@/contexts/TranslationContext";
 
 const News = () => {
+  const { t } = useTranslation();
+
   const articles = [
     {
-      title: "COOPEC Ikirenga Celebrates 15 Years of Financial Empowerment",
+      titleKey: "news.article1Title",
       date: "March 15, 2024",
-      category: "Milestone",
-      excerpt: "Reflecting on a journey of transforming lives and building stronger communities through accessible financial services.",
-      image: "celebration",
+      categoryKey: "news.article1Category",
+      excerptKey: "news.article1Excerpt",
     },
     {
-      title: "New Mobile Banking App Launches for Members",
+      titleKey: "news.article2Title",
       date: "March 10, 2024",
-      category: "Technology",
-      excerpt: "Experience easier access to your accounts with our new mobile banking platform featuring enhanced security and user-friendly interface.",
-      image: "mobile-app",
+      categoryKey: "news.article2Category",
+      excerptKey: "news.article2Excerpt",
     },
     {
-      title: "Agricultural Loan Program Expands to New Districts",
+      titleKey: "news.article3Title",
       date: "March 5, 2024",
-      category: "Loans",
-      excerpt: "We're extending our agricultural loan services to three new districts, supporting more farmers in growing their businesses.",
-      image: "agriculture",
+      categoryKey: "news.article3Category",
+      excerptKey: "news.article3Excerpt",
     },
     {
-      title: "Financial Literacy Workshop Series Begins",
+      titleKey: "news.article4Title",
       date: "February 28, 2024",
-      category: "Education",
-      excerpt: "Join our free monthly workshops covering savings strategies, investment basics, and small business management.",
-      image: "workshop",
+      categoryKey: "news.article4Category",
+      excerptKey: "news.article4Excerpt",
     },
     {
-      title: "Record Growth: 5,000 New Members in Q1 2024",
+      titleKey: "news.article5Title",
       date: "February 20, 2024",
-      category: "Growth",
-      excerpt: "Our cooperative continues to grow as more people discover the benefits of community-focused financial services.",
-      image: "growth",
+      categoryKey: "news.article5Category",
+      excerptKey: "news.article5Excerpt",
     },
     {
-      title: "Women Entrepreneurs Program Launches",
+      titleKey: "news.article6Title",
       date: "February 15, 2024",
-      category: "Programs",
-      excerpt: "New initiative offers specialized loans and training for women-led businesses, promoting economic empowerment.",
-      image: "women-entrepreneurs",
+      categoryKey: "news.article6Category",
+      excerptKey: "news.article6Excerpt",
     },
   ];
 
   const tips = [
     {
-      title: "5 Tips for Building Your Emergency Fund",
-      description: "Learn how to create a financial safety net for unexpected expenses.",
+      titleKey: "news.tip1Title",
+      descriptionKey: "news.tip1Desc",
     },
     {
-      title: "Understanding Interest Rates: A Simple Guide",
-      description: "Demystifying how interest rates affect your savings and loans.",
+      titleKey: "news.tip2Title",
+      descriptionKey: "news.tip2Desc",
     },
     {
-      title: "Starting a Small Business: Financial Planning Essentials",
-      description: "Key financial considerations when launching your entrepreneurial venture.",
+      titleKey: "news.tip3Title",
+      descriptionKey: "news.tip3Desc",
     },
   ];
 
   return (
     <div>
       <Hero
-        title="News & Updates"
-        subtitle="Stay informed about the latest developments, announcements, and financial tips from COOPEC Ikirenga"
+        title={t("news.heroTitle")}
+        subtitle={t("news.heroSubtitle")}
       />
 
       {/* Latest News */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="mb-4">Latest News</h2>
+            <h2 className="mb-4">{t("news.latestNews")}</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Catch up on recent announcements and stories from our cooperative community.
+              {t("news.latestNewsSubtitle")}
             </p>
           </div>
 
@@ -90,18 +87,18 @@ const News = () => {
                 </div>
                 <CardHeader>
                   <div className="flex items-center justify-between mb-2">
-                    <Badge variant="secondary">{article.category}</Badge>
+                    <Badge variant="secondary">{t(article.categoryKey)}</Badge>
                     <div className="flex items-center text-xs text-muted-foreground">
                       <Calendar className="h-3 w-3 mr-1" />
                       {article.date}
                     </div>
                   </div>
-                  <CardTitle className="text-xl">{article.title}</CardTitle>
+                  <CardTitle className="text-xl">{t(article.titleKey)}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="mb-4">{article.excerpt}</CardDescription>
+                  <CardDescription className="mb-4">{t(article.excerptKey)}</CardDescription>
                   <Button variant="link" className="p-0 h-auto text-primary group">
-                    Read More
+                    {t("news.readMore")}
                     <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </CardContent>
@@ -115,9 +112,9 @@ const News = () => {
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="mb-4">Financial Tips & Advice</h2>
+            <h2 className="mb-4">{t("news.financialTips")}</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Practical guidance to help you make better financial decisions.
+              {t("news.financialTipsSubtitle")}
             </p>
           </div>
 
@@ -125,12 +122,12 @@ const News = () => {
             {tips.map((tip, index) => (
               <Card key={index} className="card-hover border-border">
                 <CardHeader>
-                  <CardTitle className="text-lg">{tip.title}</CardTitle>
+                  <CardTitle className="text-lg">{t(tip.titleKey)}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="mb-4">{tip.description}</CardDescription>
+                  <CardDescription className="mb-4">{t(tip.descriptionKey)}</CardDescription>
                   <Button variant="link" className="p-0 h-auto text-primary group">
-                    Read Article
+                    {t("news.readArticle")}
                     <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </CardContent>
@@ -145,19 +142,19 @@ const News = () => {
         <div className="container mx-auto px-4">
           <Card className="max-w-2xl mx-auto border-border text-center">
             <CardHeader>
-              <CardTitle className="text-2xl">Stay Updated</CardTitle>
+              <CardTitle className="text-2xl">{t("news.stayUpdated")}</CardTitle>
               <CardDescription>
-                Subscribe to our newsletter for the latest news, tips, and exclusive member benefits.
+                {t("news.subscribeDesc")}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="flex flex-col sm:flex-row gap-3">
                 <input
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder={t("news.enterEmail")}
                   className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
                 />
-                <Button className="btn-hover whitespace-nowrap">Subscribe</Button>
+                <Button className="btn-hover whitespace-nowrap">{t("news.subscribe")}</Button>
               </div>
             </CardContent>
           </Card>
