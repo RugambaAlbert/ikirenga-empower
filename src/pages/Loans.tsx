@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import LoanCalculator from "@/components/LoanCalculator";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Briefcase, Sprout, Home, GraduationCap, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -136,6 +137,9 @@ const Loans = () => {
           </div>
         </div>
       </section>
+
+      {/* Loan Calculator */}
+      <LoanCalculator />
 
       {/* Eligibility & Requirements */}
       <section className="py-20 bg-muted">
