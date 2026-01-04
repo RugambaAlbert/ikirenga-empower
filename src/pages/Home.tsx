@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Hero from "@/components/Hero";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Wallet, TrendingUp, Users, Shield, Smartphone, GraduationCap, ArrowRight } from "lucide-react";
@@ -98,6 +99,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Testimonials Carousel */}
+      <TestimonialsCarousel />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-primary to-primary-light text-primary-foreground">
