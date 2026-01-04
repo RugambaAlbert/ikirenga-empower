@@ -5,8 +5,10 @@ import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
 import { Calculator, TrendingUp, Calendar, DollarSign } from "lucide-react";
+import { useTranslation } from "@/contexts/TranslationContext";
 
 const LoanCalculator = () => {
+  const { t } = useTranslation();
   const [loanAmount, setLoanAmount] = useState(500000);
   const [interestRate, setInterestRate] = useState(12);
   const [loanTerm, setLoanTerm] = useState(12);
@@ -54,13 +56,13 @@ const LoanCalculator = () => {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
             <Calculator className="w-4 h-4" />
-            Loan Calculator
+            {t("loans.calculator")}
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Calculate Your Monthly Payments
+            {t("loans.monthlyPayment")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Use our loan calculator to estimate your monthly payments and plan your finances effectively.
+            {t("loans.calcSubtitle")}
           </p>
         </div>
 
@@ -71,7 +73,7 @@ const LoanCalculator = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <DollarSign className="w-5 h-5 text-primary" />
-                  Loan Details
+                  {t("loans.loanDetails")}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-8">
@@ -79,7 +81,7 @@ const LoanCalculator = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <Label htmlFor="loanAmount" className="text-base font-medium">
-                      Loan Amount
+                      {t("loans.loanAmount")}
                     </Label>
                     <span className="text-lg font-bold text-primary">
                       {formatCurrency(loanAmount)}
@@ -112,7 +114,7 @@ const LoanCalculator = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <Label htmlFor="interestRate" className="text-base font-medium">
-                      Annual Interest Rate
+                      {t("loans.annualInterest")}
                     </Label>
                     <span className="text-lg font-bold text-primary">
                       {interestRate}%
@@ -146,10 +148,10 @@ const LoanCalculator = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <Label htmlFor="loanTerm" className="text-base font-medium">
-                      Loan Term (Months)
+                      {t("loans.loanTerm")}
                     </Label>
                     <span className="text-lg font-bold text-primary">
-                      {loanTerm} months
+                      {loanTerm} {t("loans.months")}
                     </span>
                   </div>
                   <Slider
@@ -162,8 +164,8 @@ const LoanCalculator = () => {
                     className="py-2"
                   />
                   <div className="flex justify-between text-sm text-muted-foreground">
-                    <span>1 month</span>
-                    <span>60 months</span>
+                    <span>1 {t("common.month")}</span>
+                    <span>60 {t("loans.months")}</span>
                   </div>
                   <Input
                     type="number"
@@ -183,7 +185,7 @@ const LoanCalculator = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-primary-foreground">
                     <TrendingUp className="w-5 h-5" />
-                    Monthly Payment
+                    {t("loans.monthlyPayment")}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -191,7 +193,7 @@ const LoanCalculator = () => {
                     {formatCurrency(calculations.monthlyPayment)}
                   </div>
                   <p className="text-primary-foreground/80 mt-2">
-                    per month for {loanTerm} months
+                    {t("common.perMonth")} {loanTerm} {t("loans.months")}
                   </p>
                 </CardContent>
               </Card>
@@ -203,7 +205,7 @@ const LoanCalculator = () => {
                       <div className="p-2 bg-secondary/20 rounded-lg">
                         <DollarSign className="w-5 h-5 text-secondary" />
                       </div>
-                      <span className="text-sm text-muted-foreground">Total Payment</span>
+                      <span className="text-sm text-muted-foreground">{t("loans.totalPayment")}</span>
                     </div>
                     <div className="text-2xl font-bold text-foreground">
                       {formatCurrency(calculations.totalPayment)}
@@ -217,7 +219,7 @@ const LoanCalculator = () => {
                       <div className="p-2 bg-accent/20 rounded-lg">
                         <Calendar className="w-5 h-5 text-accent-foreground" />
                       </div>
-                      <span className="text-sm text-muted-foreground">Total Interest</span>
+                      <span className="text-sm text-muted-foreground">{t("loans.totalInterest")}</span>
                     </div>
                     <div className="text-2xl font-bold text-foreground">
                       {formatCurrency(calculations.totalInterest)}
@@ -228,19 +230,19 @@ const LoanCalculator = () => {
 
               <Card className="border-2 border-dashed border-primary/30">
                 <CardContent className="pt-6">
-                  <h4 className="font-semibold mb-3">Payment Breakdown</h4>
+                  <h4 className="font-semibold mb-3">{t("loans.paymentBreakdown")}</h4>
                   <div className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Principal Amount</span>
+                      <span className="text-muted-foreground">{t("loans.principalAmount")}</span>
                       <span className="font-medium">{formatCurrency(loanAmount)}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Interest Amount</span>
+                      <span className="text-muted-foreground">{t("loans.interestAmount")}</span>
                       <span className="font-medium">{formatCurrency(calculations.totalInterest)}</span>
                     </div>
                     <div className="border-t pt-3">
                       <div className="flex justify-between">
-                        <span className="font-semibold">Total Repayment</span>
+                        <span className="font-semibold">{t("loans.totalRepayment")}</span>
                         <span className="font-bold text-primary">
                           {formatCurrency(calculations.totalPayment)}
                         </span>
@@ -251,14 +253,13 @@ const LoanCalculator = () => {
               </Card>
 
               <Button className="w-full btn-hover" size="lg">
-                Apply for This Loan
+                {t("loans.applyForThis")}
               </Button>
             </div>
           </div>
 
           <p className="text-center text-sm text-muted-foreground mt-8">
-            * This calculator provides estimates only. Actual loan terms may vary based on your 
-            credit profile and eligibility. Contact us for accurate loan details.
+            {t("loans.calculatorDisclaimer")}
           </p>
         </div>
       </div>
