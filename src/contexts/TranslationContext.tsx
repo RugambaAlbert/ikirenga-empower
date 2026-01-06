@@ -617,6 +617,97 @@ const translations: Translations = {
   "common.close": { en: "Close", fr: "Fermer", rw: "Funga" },
   "common.perMonth": { en: "per month for", fr: "par mois pendant", rw: "ku kwezi mu" },
   "common.month": { en: "month", fr: "mois", rw: "ukwezi" },
+
+  // Tariffs Page
+  "nav.tariffs": { en: "Tariffs", fr: "Tarifs", rw: "Ibiciro" },
+  "tariffs.title": { en: "Our Tariffs", fr: "Nos Tarifs", rw: "Ibiciro Byacu" },
+  "tariffs.subtitle": { 
+    en: "Transparent pricing for all our financial services", 
+    fr: "Tarification transparente pour tous nos services financiers", 
+    rw: "Ibiciro bigaragara kuri serivisi zacu zose z'imari" 
+  },
+  "tariffs.effectiveDate": { en: "Effective July 2025", fr: "En vigueur juillet 2025", rw: "Bitangira Nyakanga 2025" },
+  
+  // Account Services
+  "tariffs.accountServices": { en: "Account Services Charges", fr: "Frais de Services de Compte", rw: "Amafaranga y'Ibikorwa bya Konti" },
+  "tariffs.service": { en: "Service", fr: "Service", rw: "Serivisi" },
+  "tariffs.physicalMember": { en: "Physical Member", fr: "Membre Physique", rw: "Umunyamuryango w'Umuntu" },
+  "tariffs.registeredBusiness": { en: "Registered Business", fr: "Entreprise Enregistrée", rw: "Ubucuruzi Bwanditswe" },
+  "tariffs.registeredNGO": { en: "Registered NGO", fr: "ONG Enregistrée", rw: "ONG Yanditswe" },
+  "tariffs.businessNGO": { en: "Business/NGO", fr: "Entreprise/ONG", rw: "Ubucuruzi/ONG" },
+  "tariffs.free": { en: "Free", fr: "Gratuit", rw: "Ubuntu" },
+  "tariffs.notApplicable": { en: "N/A", fr: "N/A", rw: "Ntibikora" },
+  "tariffs.accountOpening": { en: "RWF Account Opening Fees (Savings or Current)", fr: "Frais d'ouverture de compte RWF (Épargne ou Courant)", rw: "Amafaranga yo Gufungura Konti (Ubwizigame cyangwa Isanzwe)" },
+  "tariffs.savingsMinBalance": { en: "RWF Savings Account Minimum Balance", fr: "Solde minimum du compte d'épargne RWF", rw: "Igipimo Ntarengwa cy'Ubwizigame" },
+  "tariffs.currentMinBalance": { en: "RWF Current Account Minimum Balance", fr: "Solde minimum du compte courant RWF", rw: "Igipimo Ntarengwa cya Konti Isanzwe" },
+  "tariffs.dormantActivation": { en: "RWF Dormant Account Activation", fr: "Activation de compte dormant RWF", rw: "Gukangura Konti Idasinziriye" },
+  "tariffs.accountClosing": { en: "RWF Account Closing Fee", fr: "Frais de clôture de compte RWF", rw: "Amafaranga yo Gufunga Konti" },
+  
+  // Salary & Transfers
+  "tariffs.salaryTransfers": { en: "Salary and Transfer Commissions", fr: "Commissions sur Salaires et Transferts", rw: "Amafaranga ku Mushahara n'Kohereza" },
+  "tariffs.salaryCommission": { en: "RWF Salary Commission", fr: "Commission sur salaire RWF", rw: "Amafaranga ku Mushahara" },
+  "tariffs.internalTransfers": { en: "RWF Internal Transfers", fr: "Transferts internes RWF", rw: "Kohereza mu Nzu" },
+  "tariffs.externalTransfer": { en: "RWF External Transfer (COOPEC to Members)", fr: "Transfert externe RWF (COOPEC aux Membres)", rw: "Kohereza Hanze (COOPEC ku Banyamuryango)" },
+  "tariffs.bankTransfer": { en: "RWF Transfer to Commercial Banks", fr: "Transfert RWF vers Banques Commerciales", rw: "Kohereza ku Mabanki" },
+  
+  // Cash Operations
+  "tariffs.cashWithdrawal": { en: "Cash Withdrawal", fr: "Retrait d'Argent", rw: "Gukura Amafaranga" },
+  "tariffs.withdrawCurrent": { en: "Withdraw on Current/TEKANA Account", fr: "Retrait sur Compte Courant/TEKANA", rw: "Gukura kuri Konti Isanzwe/TEKANA" },
+  "tariffs.withdrawZigama": { en: "Withdraw on Zigama Witeze Imbere", fr: "Retrait sur Zigama Witeze Imbere", rw: "Gukura kuri Zigama Witeze Imbere" },
+  "tariffs.withdrawChildren": { en: "Withdraw on Savings for Children", fr: "Retrait sur Épargne Enfants", rw: "Gukura ku Bwizigame bw'Abana" },
+  "tariffs.cashDeposit": { en: "Cash Deposit", fr: "Dépôt d'Argent", rw: "Gushyira Amafaranga" },
+  "tariffs.depositMoney": { en: "Deposit of Money", fr: "Dépôt d'argent", rw: "Gushyira Amafaranga" },
+  "tariffs.fee": { en: "Fee", fr: "Frais", rw: "Amafaranga" },
+  
+  // Statements
+  "tariffs.statements": { en: "Account Statements", fr: "Relevés de Compte", rw: "Urutonde rwa Konti" },
+  "tariffs.firstStatement": { en: "First Account Statement in Month", fr: "Premier relevé du mois", rw: "Urutonde rwa Mbere mu Kwezi" },
+  "tariffs.additionalStatement": { en: "Additional Statement (same month)", fr: "Relevé supplémentaire (même mois)", rw: "Urutonde Rwinyongera (ukwezi kumwe)" },
+  
+  // Other Services
+  "tariffs.otherServices": { en: "Other Services", fr: "Autres Services", rw: "Izindi Serivisi" },
+  "tariffs.newPassbook": { en: "New & Replacement of Full Used Passbook", fr: "Nouveau carnet ou remplacement", rw: "Igitabo Gishya cyangwa Gisimbuza" },
+  "tariffs.lostPassbook": { en: "Lost Passbook Replacement", fr: "Remplacement carnet perdu", rw: "Gusimbuza Igitabo Cyabuze" },
+  "tariffs.accountConfirmation": { en: "Account Details Confirmation", fr: "Confirmation des détails du compte", rw: "Kwemeza Amakuru ya Konti" },
+  "tariffs.bankClearance": { en: "Bank Clearance Certificate", fr: "Certificat de conformité bancaire", rw: "Icyemezo cy'Ubuziranenge bwa Banki" },
+  "tariffs.debtConfirmation": { en: "Debt Confirmation", fr: "Confirmation de dette", rw: "Kwemeza Imyenda" },
+  "tariffs.copyBankSlip": { en: "Copy of Bank Slip (Deposit & Withdraw)", fr: "Copie du bordereau bancaire", rw: "Kopi y'Urupapuro rwa Banki" },
+  "tariffs.membershipFile": { en: "Membership Information File", fr: "Dossier d'information membre", rw: "Dosiye y'Amakuru y'Umunyamuryango" },
+  
+  // Search Fees
+  "tariffs.searchFees": { en: "Search Fees (Document Retrieval)", fr: "Frais de Recherche (Récupération de Documents)", rw: "Amafaranga yo Gushaka (Kubona Inyandiko)" },
+  "tariffs.period": { en: "Period", fr: "Période", rw: "Igihe" },
+  "tariffs.feePerDocument": { en: "Fee per Document", fr: "Frais par Document", rw: "Amafaranga kuri Buri Nyandiko" },
+  "tariffs.search0to3": { en: "0-3 Months", fr: "0-3 Mois", rw: "Amezi 0-3" },
+  "tariffs.search3to12": { en: "3 Months to 1 Year", fr: "3 Mois à 1 An", rw: "Amezi 3 kugeza Umwaka 1" },
+  "tariffs.search12plus": { en: "1 Year and Above", fr: "1 An et Plus", rw: "Umwaka 1 no Hejuru" },
+  
+  // Mobile Banking
+  "tariffs.mobileBanking": { en: "Mobile Banking", fr: "Banque Mobile", rw: "Banki kuri Telefone" },
+  "tariffs.acToWallet": { en: "Account to E-Wallet", fr: "Compte vers E-Wallet", rw: "Konti ku E-Wallet" },
+  "tariffs.walletToAc": { en: "E-Wallet to Account", fr: "E-Wallet vers Compte", rw: "E-Wallet kuri Konti" },
+  "tariffs.miniStatement": { en: "Mini Statement", fr: "Mini Relevé", rw: "Urutonde Ruto" },
+  "tariffs.checkBalance": { en: "Check Balance", fr: "Vérifier le Solde", rw: "Kureba Amafaranga" },
+  "tariffs.pinChange": { en: "PIN Change", fr: "Changement de PIN", rw: "Guhindura PIN" },
+  "tariffs.transactionAlert": { en: "Transaction Alert", fr: "Alerte de Transaction", rw: "Kumenyesha Ibikorwa" },
+  "tariffs.loanBalance": { en: "Loan Balance Check", fr: "Vérifier le Solde du Prêt", rw: "Kureba Inguzanyo Isigaye" },
+  
+  // Loan Products
+  "tariffs.loanProducts": { en: "Loan Products Pricing", fr: "Tarification des Produits de Prêt", rw: "Ibiciro by'Inguzanyo" },
+  "tariffs.loanName": { en: "Loan Product", fr: "Produit de Prêt", rw: "Ubwoko bw'Inguzanyo" },
+  "tariffs.interestRate": { en: "Interest Rate", fr: "Taux d'Intérêt", rw: "Inyungu" },
+  "tariffs.applicationFee": { en: "Application Fee", fr: "Frais de Demande", rw: "Amafaranga yo Gusaba" },
+  "tariffs.studyFee": { en: "Study Fee", fr: "Frais d'Étude", rw: "Amafaranga yo Gusuzuma" },
+  "tariffs.commission": { en: "Commission", fr: "Commission", rw: "Komisiyo" },
+  "tariffs.collateralVisit": { en: "Collateral Visit Fee", fr: "Frais de Visite de Garantie", rw: "Amafaranga yo Gusura Ingwate" },
+  
+  // Important Notes
+  "tariffs.importantNotes": { en: "Important Notes", fr: "Notes Importantes", rw: "Amabaruwa y'Ingenzi" },
+  "tariffs.note1": { en: "All interest rates are calculated on a declining balance method.", fr: "Tous les taux d'intérêt sont calculés sur la méthode du solde dégressif.", rw: "Inyungu zose zibarwa ku buryo bwo kugabanuka." },
+  "tariffs.note2": { en: "All charges are exclusive of VAT.", fr: "Tous les frais sont hors TVA.", rw: "Amafaranga yose ntabwo arimo Umusoro." },
+  "tariffs.note3": { en: "Collateral within the Sector where Branch is located: 3,000 RWF.", fr: "Garantie dans le Secteur de la succursale: 3,000 RWF.", rw: "Ingwate iri mu Murenge w'Ishami: 3,000 RWF." },
+  "tariffs.note4": { en: "Collateral beyond Sector but within Rulindo District: 12,000 RWF.", fr: "Garantie hors Secteur mais dans le District de Rulindo: 12,000 RWF.", rw: "Ingwate hanze y'Umurenge ariko mu Karere ka Rulindo: 12,000 RWF." },
+  "tariffs.note5": { en: "Collateral outside Rulindo District: Fees calculated based on Mission Order per COOPEC IKIRENGA Logistic Policy.", fr: "Garantie hors du District de Rulindo: Frais calculés selon l'Ordre de Mission par la Politique Logistique de COOPEC IKIRENGA.", rw: "Ingwate hanze y'Akarere ka Rulindo: Amafaranga abarwa hakurikijwe Itegeko ry'Urugendo nk'uko Politiki y'Ibikoresho ya COOPEC IKIRENGA ibivuga." },
 };
 
 interface TranslationContextType {
