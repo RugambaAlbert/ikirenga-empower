@@ -17,12 +17,51 @@ const translations: Translations = {
   "nav.services": { en: "Services", fr: "Services", rw: "Serivisi" },
   "nav.loans": { en: "Loans", fr: "Prêts", rw: "Inguzanyo" },
   "nav.membership": { en: "Membership", fr: "Adhésion", rw: "Kwiyandikisha" },
+  "nav.branches": { en: "Branches", fr: "Agences", rw: "Amashami" },
   "nav.news": { en: "News", fr: "Actualités", rw: "Amakuru" },
   "nav.contact": { en: "Contact", fr: "Contact", rw: "Twandikire" },
   "nav.login": { en: "Login", fr: "Connexion", rw: "Injira" },
   "nav.logout": { en: "Logout", fr: "Déconnexion", rw: "Gusohoka" },
   "nav.joinNow": { en: "Join Now", fr: "Adhérer", rw: "Iyandikishe" },
   "nav.admin": { en: "Admin", fr: "Admin", rw: "Ubuyobozi" },
+
+  // Branches Page
+  "branches.title": { en: "Our Branches & Outlets", fr: "Nos Agences et Points de Service", rw: "Amashami n'Ahantu ho Gukorera" },
+  "branches.subtitle": { 
+    en: "Find COOPEC IKIRENGA near you. We operate across the Northern Province of Rwanda.", 
+    fr: "Trouvez COOPEC IKIRENGA près de chez vous. Nous opérons dans toute la Province du Nord du Rwanda.", 
+    rw: "Shakisha COOPEC IKIRENGA hafi yawe. Dukora mu Ntara y'Amajyaruguru y'u Rwanda." 
+  },
+  "branches.headquarters": { en: "Headquarters", fr: "Siège Social", rw: "Ikigo Nkuru" },
+  "branches.hqName": { en: "COOPEC IKIRENGA Head Office", fr: "Siège de COOPEC IKIRENGA", rw: "Ikigo Nkuru cya COOPEC IKIRENGA" },
+  "branches.hqLocation": { 
+    en: "Northern Province, Rulindo District, Base Sector (Base Market - Road Kigali Musanze)", 
+    fr: "Province du Nord, District de Rulindo, Secteur Base (Marché Base - Route Kigali Musanze)", 
+    rw: "Intara y'Amajyaruguru, Akarere ka Rulindo, Umurenge wa Base (Isoko rya Base - Umuhanda Kigali Musanze)" 
+  },
+  "branches.branchesTitle": { en: "Our Branches", fr: "Nos Agences", rw: "Amashami Yacu" },
+  "branches.branchesSubtitle": { 
+    en: "Full-service branches offering complete banking services", 
+    fr: "Agences offrant des services bancaires complets", 
+    rw: "Amashami atanga serivisi zose za banki" 
+  },
+  "branches.outletsTitle": { en: "Service Outlets", fr: "Points de Service", rw: "Ahantu ho Gukorera" },
+  "branches.outletsSubtitle": { 
+    en: "Convenient locations for deposits, withdrawals, and basic transactions", 
+    fr: "Emplacements pratiques pour dépôts, retraits et transactions de base", 
+    rw: "Ahantu hafasha gutereka, gukuramo, no gukora ibikorwa by'ibanze" 
+  },
+  "branches.kinihiraLocation": { en: "Rulindo District, Kinihira Sector", fr: "District de Rulindo, Secteur Kinihira", rw: "Akarere ka Rulindo, Umurenge wa Kinihira" },
+  "branches.tumbaLocation": { en: "Rulindo District, Tumba Sector", fr: "District de Rulindo, Secteur Tumba", rw: "Akarere ka Rulindo, Umurenge wa Tumba" },
+  "branches.karegamaziLocation": { en: "Rulindo District, Karegamazi Sector", fr: "District de Rulindo, Secteur Karegamazi", rw: "Akarere ka Rulindo, Umurenge wa Karegamazi" },
+  "branches.cyungoLocation": { en: "Rulindo District, Cyungo Sector", fr: "District de Rulindo, Secteur Cyungo", rw: "Akarere ka Rulindo, Umurenge wa Cyungo" },
+  "branches.gasizaLocation": { en: "Rulindo District, Gasiza Sector", fr: "District de Rulindo, Secteur Gasiza", rw: "Akarere ka Rulindo, Umurenge wa Gasiza" },
+  "branches.baseLocation": { en: "Rulindo District, Base Sector", fr: "District de Rulindo, Secteur Base", rw: "Akarere ka Rulindo, Umurenge wa Base" },
+  "branches.miyoveLocation": { en: "Rulindo District, Miyove Sector", fr: "District de Rulindo, Secteur Miyove", rw: "Akarere ka Rulindo, Umurenge wa Miyove" },
+  "branches.gateteLocation": { en: "Rulindo District, Gatete Sector", fr: "District de Rulindo, Secteur Gatete", rw: "Akarere ka Rulindo, Umurenge wa Gatete" },
+  "branches.shyorongiLocation": { en: "Shyorongi Sector", fr: "Secteur Shyorongi", rw: "Umurenge wa Shyorongi" },
+  "branches.visitUs": { en: "Need more information about our locations? Contact us today!", fr: "Besoin de plus d'informations sur nos emplacements? Contactez-nous!", rw: "Ukeneye amakuru menshi ku mashami yacu? Twandikire uyu munsi!" },
+  "branches.contactUs": { en: "Contact Us", fr: "Contactez-Nous", rw: "Twandikire" },
 
   // Hero
   "hero.title": { 

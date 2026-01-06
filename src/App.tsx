@@ -16,6 +16,7 @@ import News from "./pages/News";
 import Auth from "./pages/Auth";
 import Admin from "./pages/Admin";
 import Tariffs from "./pages/Tariffs";
+import Branches from "./pages/Branches";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +41,7 @@ const App = () => (
                 <Route path="/news" element={<News />} />
                 <Route path="/auth" element={<Auth />} />
                 <Route path="/tariffs" element={<Tariffs />} />
+                <Route path="/branches" element={<Branches />} />
                 <Route path="/admin" element={<Admin />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
