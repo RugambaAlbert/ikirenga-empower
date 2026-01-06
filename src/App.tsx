@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import News from "./pages/News";
 import Auth from "./pages/Auth";
 import Admin from "./pages/Admin";
+import Tariffs from "./pages/Tariffs";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ const App = () => (
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/news" element={<News />} />
                 <Route path="/auth" element={<Auth />} />
+                <Route path="/tariffs" element={<Tariffs />} />
                 <Route path="/admin" element={<Admin />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
