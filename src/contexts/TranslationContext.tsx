@@ -256,37 +256,37 @@ const translations: Translations = {
   // About Page
   "about.heroTitle": { en: "About COOPEC Ikirenga", fr: "À Propos de COOPEC Ikirenga", rw: "Abo Turi COOPEC Ikirenga" },
   "about.heroSubtitle": { 
-    en: "Building financial resilience and empowering communities since 2008", 
-    fr: "Construire la résilience financière et autonomiser les communautés depuis 2008", 
-    rw: "Kubaka imbaraga z'imari no gutera inkunga abaturage kuva 2008" 
+    en: "A Financial Cooperative empowering communities in Rwanda's Northern Province", 
+    fr: "Une Coopérative Financière qui autonomise les communautés dans la Province du Nord du Rwanda", 
+    rw: "Koperative y'Imari itera inkunga abaturage mu Ntara y'Amajyaruguru y'u Rwanda" 
   },
   "about.ourStory": { en: "Our Story", fr: "Notre Histoire", rw: "Amateka Yacu" },
   "about.storyParagraph1": { 
-    en: "Founded in 2008, COOPEC Ikirenga began as a small community initiative to provide accessible financial services to underserved populations in Rwanda. What started with just 50 members has grown into a thriving cooperative serving over 50,000 members across multiple regions.", 
-    fr: "Fondée en 2008, COOPEC Ikirenga a commencé comme une petite initiative communautaire pour fournir des services financiers accessibles aux populations mal desservies au Rwanda. Ce qui a commencé avec seulement 50 membres est devenu une coopérative prospère servant plus de 50,000 membres dans plusieurs régions.", 
-    rw: "Yashinzwe mu 2008, COOPEC Ikirenga yatangiye nk'umushinga muto w'umuryango wo gutanga serivisi z'imari zishoboka ku baturage batarabonye serivisi mu Rwanda. Icyatangiye n'abanyamuryango 50 gusa cyakuze cyabaye koperative ikora neza itanga serivisi ku banyamuryango barenga 50,000 mu turere twinshi." 
+    en: "COOPEC IKIRENGA is a Financial Cooperative operating in the Northern Province of Rwanda. Its creation resulted from the merger of five SACCOs (COOPEC ITI, COOPEC CODEMARU, CSTCR SACCO, CSPKI and TRASO) that decided to consolidate into one single entity in 2023 after an assessment that highlighted a set of challenges that individual SACCOs were unable to handle.", 
+    fr: "COOPEC IKIRENGA est une Coopérative Financière opérant dans la Province du Nord du Rwanda. Sa création résulte de la fusion de cinq SACCO (COOPEC ITI, COOPEC CODEMARU, CSTCR SACCO, CSPKI et TRASO) qui ont décidé de se consolider en une seule entité en 2023 après une évaluation qui a mis en évidence un ensemble de défis que les SACCO individuelles ne pouvaient pas gérer.", 
+    rw: "COOPEC IKIRENGA ni Koperative y'Imari ikora mu Ntara y'Amajyaruguru y'u Rwanda. Ishingwa ryayo ryavuye mu guhuza amakoperative atanu (COOPEC ITI, COOPEC CODEMARU, CSTCR SACCO, CSPKI na TRASO) yiyemeje kuba ikigo kimwe mu 2023 nyuma y'isuzuma ryerekanye ibibazo byinshi amakoperative yihariye atari ashoboye gukemura." 
   },
   "about.storyParagraph2": { 
-    en: "Our journey has been one of continuous growth and adaptation. We've expanded our services from basic savings accounts to comprehensive financial solutions including business loans, mobile banking, and financial education programs.", 
-    fr: "Notre parcours a été celui d'une croissance et d'une adaptation continues. Nous avons élargi nos services des comptes d'épargne de base aux solutions financières complètes, y compris les prêts aux entreprises, la banque mobile et les programmes d'éducation financière.", 
-    rw: "Urugendo rwacu rwabaye urwo gukura no guhinduka bidashira. Twagutse serivisi zacu kuva ku konti z'ubwizigame busanzwe kugeza ku bisubizo by'imari byuzuye harimo inguzanyo z'ubucuruzi, banki kuri telefone, na gahunda z'uburezi bw'imari." 
+    en: "The feasibility study conducted jointly by BNR, RCA, AMIR and RULINDO District revealed that these SACCOs had limited capacity to provide needed services. Among the highlighted issues were limited liquidity level, lack of competitiveness, lower capital base, inaccurate financial resources, lack of innovative financial products, limited technological infrastructure and security standards.", 
+    fr: "L'étude de faisabilité menée conjointement par BNR, RCA, AMIR et le District de RULINDO a révélé que ces SACCO avaient une capacité limitée à fournir les services nécessaires. Parmi les problèmes mis en évidence figuraient un niveau de liquidité limité, un manque de compétitivité, une base de capital réduite, des ressources financières inexactes, un manque de produits financiers innovants, une infrastructure technologique limitée et des normes de sécurité insuffisantes.", 
+    rw: "Ubushakashatsi bw'ibishoboka bwakoreshejwe na BNR, RCA, AMIR n'Akarere ka RULINDO bwerekana ko aya makoperative yari afite ubushobozi buke bwo gutanga serivisi zikenewe. Mu bibazo byagaragajwe harimo urwego ruto rw'amafaranga ashobora gukoreshwa, kubura kwihangana, igipimo cy'umutungo gito, amafaranga adakwiye, kubura ibicuruzwa by'imari bishya, ikoranabuhanga ry'amakuru rigaragaza n'amategeko y'umutekano." 
   },
   "about.storyParagraph3": { 
-    en: "Today, we stand proud as one of Rwanda's leading microfinance cooperatives, committed to our founding mission of empowering communities through financial inclusion.", 
-    fr: "Aujourd'hui, nous sommes fiers d'être l'une des principales coopératives de microfinance du Rwanda, engagés dans notre mission fondatrice d'autonomiser les communautés par l'inclusion financière.", 
-    rw: "Uyu munsi, duhagaze twishimiye nk'imwe mu makoperative akomeye y'imari mu Rwanda, twiyemeje intego yacu yo gutera inkunga abaturage binyuze mu kwinjizwa mu by'imari." 
+    en: "After discovering all these challenges, the promising solution was to merge into one SACCO named \"COOPEC IKIRENGA\" that would operate as one entity where the former SACCOs would become branches. COOPEC IKIRENGA has a new governance and organizational structure complying with the laws and regulations governing cooperative organizations and microfinance institutions in Rwanda.", 
+    fr: "Après avoir découvert tous ces défis, la solution prometteuse était de fusionner en un seul SACCO nommé \"COOPEC IKIRENGA\" qui fonctionnerait comme une seule entité où les anciens SACCO deviendraient des succursales. COOPEC IKIRENGA dispose d'une nouvelle structure de gouvernance et organisationnelle conforme aux lois et règlements régissant les organisations coopératives et les institutions de microfinance au Rwanda.", 
+    rw: "Nyuma yo kubona izi nzitizi zose, igisubizo cyizewe cyari ugushyira hamwe amakoperative mu koperative imwe yitwa \"COOPEC IKIRENGA\" yakoraga nk'ikigo kimwe aho amakoperative yabanjirije yabaye amashami. COOPEC IKIRENGA ifite imiterere mishya y'ubutegetsi n'imiyoborere ikurikiza amategeko n'amabwiriza agenga imiryango y'amakoperative n'ibigo by'imari nto mu Rwanda." 
   },
   "about.ourMission": { en: "Our Mission", fr: "Notre Mission", rw: "Intego Yacu" },
   "about.missionText": { 
-    en: "To provide accessible, affordable, and sustainable financial services that empower individuals and communities to achieve economic independence and improve their quality of life.", 
-    fr: "Fournir des services financiers accessibles, abordables et durables qui permettent aux individus et aux communautés d'atteindre l'indépendance économique et d'améliorer leur qualité de vie.", 
-    rw: "Gutanga serivisi z'imari zishoboka, zishoboka, kandi zirambye zitera inkunga abantu n'abaturage kugera ku bwigenge bw'ubukungu no kunoza ubuzima bwabo." 
+    en: "To provide accessible, affordable, and sustainable financial services that empower individuals and communities in Rwanda's Northern Province to achieve economic independence and improve their quality of life.", 
+    fr: "Fournir des services financiers accessibles, abordables et durables qui permettent aux individus et aux communautés de la Province du Nord du Rwanda d'atteindre l'indépendance économique et d'améliorer leur qualité de vie.", 
+    rw: "Gutanga serivisi z'imari zishoboka, zishoboka, kandi zirambye zitera inkunga abantu n'abaturage mu Ntara y'Amajyaruguru y'u Rwanda kugera ku bwigenge bw'ubukungu no kunoza ubuzima bwabo." 
   },
   "about.ourVision": { en: "Our Vision", fr: "Notre Vision", rw: "Icyo Dushaka" },
   "about.visionText": { 
-    en: "To be Rwanda's most trusted and innovative microfinance cooperative, recognized for transforming lives and building prosperous communities through financial inclusion.", 
-    fr: "Être la coopérative de microfinance la plus fiable et innovante du Rwanda, reconnue pour transformer des vies et bâtir des communautés prospères par l'inclusion financière.", 
-    rw: "Kuba koperative y'imari yizerwa cyane kandi ihindura mu Rwanda, izwi cyane mu guhindura ubuzima no kubaka abaturage batunganye binyuze mu kwinjizwa mu by'imari." 
+    en: "To be the most trusted and innovative financial cooperative in Rwanda's Northern Province, recognized for transforming lives and building prosperous communities through financial inclusion.", 
+    fr: "Être la coopérative financière la plus fiable et innovante de la Province du Nord du Rwanda, reconnue pour transformer des vies et bâtir des communautés prospères par l'inclusion financière.", 
+    rw: "Kuba koperative y'imari yizerwa cyane kandi ihindura mu Ntara y'Amajyaruguru y'u Rwanda, izwi cyane mu guhindura ubuzima no kubaka abaturage batunganye binyuze mu kwinjizwa mu by'imari." 
   },
   "about.ourValues": { en: "Our Values", fr: "Nos Valeurs", rw: "Indangagaciro Zacu" },
   "about.valuesSubtitle": { 
@@ -296,9 +296,9 @@ const translations: Translations = {
   },
   "about.communityFirst": { en: "Community First", fr: "Communauté d'Abord", rw: "Abaturage Mbere" },
   "about.communityDesc": { 
-    en: "We prioritize the needs and wellbeing of our members and their communities.", 
-    fr: "Nous priorisons les besoins et le bien-être de nos membres et de leurs communautés.", 
-    rw: "Dushyira imbere ibyo abanyamuryango bacu bakeneye n'imibereho myiza yabo n'abaturage babo." 
+    en: "We prioritize the needs and wellbeing of our members and their communities across Rulindo District.", 
+    fr: "Nous priorisons les besoins et le bien-être de nos membres et de leurs communautés dans le District de Rulindo.", 
+    rw: "Dushyira imbere ibyo abanyamuryango bacu bakeneye n'imibereho myiza yabo n'abaturage babo mu Karere ka Rulindo." 
   },
   "about.integrity": { en: "Integrity", fr: "Intégrité", rw: "Ubunyangamugayo" },
   "about.integrityDesc": { 
@@ -314,20 +314,20 @@ const translations: Translations = {
   },
   "about.innovation": { en: "Innovation", fr: "Innovation", rw: "Ibishya" },
   "about.innovationDesc": { 
-    en: "We continuously improve our services to meet the evolving needs of our members.", 
-    fr: "Nous améliorons continuellement nos services pour répondre aux besoins évolutifs de nos membres.", 
-    rw: "Dukomeza kunoza serivisi zacu kugira ngo zihuze n'ibyo abanyamuryango bacu bakeneye bihinduka." 
+    en: "We continuously improve our services with modern technology and innovative financial products to meet the evolving needs of our members.", 
+    fr: "Nous améliorons continuellement nos services avec une technologie moderne et des produits financiers innovants pour répondre aux besoins évolutifs de nos membres.", 
+    rw: "Dukomeza kunoza serivisi zacu n'ikoranabuhanga rishya n'ibicuruzwa by'imari bishya kugira ngo bihuze n'ibyo abanyamuryango bacu bakeneye bihinduka." 
   },
   "about.governance": { en: "Governance & Leadership", fr: "Gouvernance et Leadership", rw: "Ubutegetsi n'Ubuyobozi" },
   "about.governanceText1": { 
-    en: "COOPEC Ikirenga is governed by a Board of Directors elected by our members. Our leadership team brings decades of combined experience in finance, community development, and cooperative management.", 
-    fr: "COOPEC Ikirenga est gouvernée par un Conseil d'Administration élu par nos membres. Notre équipe de direction apporte des décennies d'expérience combinée en finance, développement communautaire et gestion coopérative.", 
-    rw: "COOPEC Ikirenga iyoborwa n'Inama y'Ubuyobozi yatowe n'abanyamuryango bacu. Itsinda ryacu ry'ubuyobozi rizana imyaka icumi y'uburambe mu by'imari, iterambere ry'umuryango, no gucunga koperative." 
+    en: "COOPEC Ikirenga has a new governance and organizational structure complying with the laws and regulations governing cooperative organizations and microfinance institutions in Rwanda. Our leadership team is elected by members and brings extensive experience in finance, community development, and cooperative management.", 
+    fr: "COOPEC Ikirenga dispose d'une nouvelle structure de gouvernance et organisationnelle conforme aux lois et règlements régissant les organisations coopératives et les institutions de microfinance au Rwanda. Notre équipe de direction est élue par les membres et apporte une vaste expérience en finance, développement communautaire et gestion coopérative.", 
+    rw: "COOPEC Ikirenga ifite imiterere mishya y'ubutegetsi n'imiyoborere ikurikiza amategeko n'amabwiriza agenga imiryango y'amakoperative n'ibigo by'imari nto mu Rwanda. Itsinda ryacu ry'ubuyobozi ritowe n'abanyamuryango kandi rizana uburambe bunini mu by'imari, iterambere ry'umuryango, no gucunga koperative." 
   },
   "about.governanceText2": { 
-    en: "We maintain the highest standards of corporate governance, with regular audits, transparent financial reporting, and member-focused decision making. Our governance structure ensures accountability while keeping member interests at the forefront of everything we do.", 
-    fr: "Nous maintenons les normes les plus élevées de gouvernance d'entreprise, avec des audits réguliers, des rapports financiers transparents et une prise de décision axée sur les membres. Notre structure de gouvernance assure la responsabilité tout en gardant les intérêts des membres au premier plan de tout ce que nous faisons.", 
-    rw: "Dufata ingamba zo hejuru z'ubutegetsi bw'ikigo, hamwe n'isuzuma rihoraho, raporo z'imari zigaragara, no gufata ibyemezo bishingiye ku banyamuryango. Imiterere y'ubutegetsi bwacu itanga uburyozwe n'ubuzima bw'abanyamuryango imbere mu byo dukora byose." 
+    en: "We maintain the highest standards of corporate governance, with regular audits, transparent financial reporting, and member-focused decision making. Our five former SACCOs now operate as branches, ensuring local accessibility while benefiting from consolidated resources and expertise.", 
+    fr: "Nous maintenons les normes les plus élevées de gouvernance d'entreprise, avec des audits réguliers, des rapports financiers transparents et une prise de décision axée sur les membres. Nos cinq anciens SACCO fonctionnent maintenant comme des succursales, garantissant l'accessibilité locale tout en bénéficiant de ressources et d'une expertise consolidées.", 
+    rw: "Dufata ingamba zo hejuru z'ubutegetsi bw'ikigo, hamwe n'isuzuma rihoraho, raporo z'imari zigaragara, no gufata ibyemezo bishingiye ku banyamuryango. Amakoperative atanu yabanjirije ubu akora nk'amashami, atanga ubushobozi bwo kugera hafi mu gihe bungukira ku mbaraga n'ubuhanga byahujwe." 
   },
 
   // Loans Page
