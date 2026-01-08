@@ -1,5 +1,6 @@
 import { Phone, Mail, Clock } from "lucide-react";
 import { useTranslation } from "@/contexts/TranslationContext";
+import coopecLogo from "@/assets/coopec-ikirenga-logo.png";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -31,10 +32,12 @@ const Header = () => {
       <div className="py-4 sm:py-6">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-3 sm:gap-4">
-            {/* Logo placeholder - circular emblem */}
-            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-full flex items-center justify-center shadow-lg">
-              <span className="text-primary font-bold text-lg sm:text-xl">CI</span>
-            </div>
+            {/* Logo */}
+            <img 
+              src={coopecLogo} 
+              alt="COOPEC IKIRENGA Logo" 
+              className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
+            />
             <div>
               <h1 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
                 COOPEC IKIRENGA
